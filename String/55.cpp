@@ -8,7 +8,7 @@ string rightReverse(string &s, int k){
     reverse(s.begin() , s.begin() + k);
     reverse(s.begin() + k, s.end());
     return s;
-} // 时间复杂度O(n) 空间复杂度O(1)
+} // reverse标准库的函数，时间复杂度O(n) 空间复杂度O(1)
 
 int main(){
     int m;
