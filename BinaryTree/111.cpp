@@ -9,10 +9,13 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr){}
 };
 
-int minDepth(TreeNode *root){
-    if (root == nullptr) return 0;
-    int a = minDepth(root->left);
-    int b = minDepth(root->right);
+int minDepth(TreeNode *node){
+    if (node == nullptr) return 0;
+    int a = minDepth(node->left);
+    int b = minDepth(node->right);
+
+    if(node->left == nullptr || node->right == nullptr)
+        return 1 + a + b;
     return 1 + min(a, b);
 }
 
