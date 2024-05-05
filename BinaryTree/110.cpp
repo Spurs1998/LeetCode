@@ -9,7 +9,12 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr){}
 };
 
-bool isBalancedTree(TreeNode* root){
+int depth(TreeNode *node){
+    if(node == nullptr) return 0;
+    return 
+}
+
+bool isBalancedTree(TreeNode* ){
     if(root == nullptr) return true;
     
 }
